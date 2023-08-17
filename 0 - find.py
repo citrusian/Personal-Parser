@@ -1,9 +1,8 @@
 import os
 from tqdm import tqdm
 
-
 # Change the target folder here
-folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Public"
+folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Misc LSX"
 # The target text is not case-sensitive, modify line 30-33 to use case-sensitive
 target_text = "pickpocket"
 # Exclude some extension, in this case .LSF and .LSB is encoded, so you must decode it to .LSX first
@@ -15,7 +14,6 @@ def gather_file(folder_path):
     for root, _, files in os.walk(folder_path):
         for file in files:
             file_path = os.path.join(root, file)
-            # Check if the file extension is in the list of extensions to skip
             if not any(file_path.lower().endswith(ext) for ext in excluded_extension):
                 all_files.append(file_path)
     return all_files
