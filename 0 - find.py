@@ -6,7 +6,7 @@ from tqdm import tqdm
 folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Public"
 # The target text is not case-sensitive, modify line 30-33 to use case-sensitive
 target_text = "pickpocket"
-# Exclude some extension, in this case .LSF and .LSB is encoded, so you must decode it to .lsc first
+# Exclude some extension, in this case .LSF and .LSB is encoded, so you must decode it to .LSX first
 excluded_extension = ['.lsf', '.lsb']
 
 def gather_file(folder_path):
