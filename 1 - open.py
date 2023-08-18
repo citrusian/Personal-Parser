@@ -2,7 +2,8 @@ import os
 import subprocess
 
 
-# Choose if you want to use default notepad++ directory or using environment variable
+# Choose if you want to use default notepad++ directory
+# or using environment variable
 # notepad_location = os.environ.get("NPP", "notepad++.exe")
 notepad_location = r"C:\Program Files\Notepad++\notepad++.exe"
 

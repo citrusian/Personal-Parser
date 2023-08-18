@@ -2,11 +2,21 @@ import os
 from tqdm import tqdm
 
 # Change the target folder here
-folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Misc LSX"
+# folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Search\Flags LSX"
+# folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Search\Misc LSX"
+# folder_path = r"Y:\GOG Games\BG3 Mods\Export\- Patch HF3"
+# folder_path = r"Y:\GOG Games\BG3 Mods\Export\- Patch HF4 redeployed"
+folder_path = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Public"
+
 # The target text is not case-sensitive, modify line 30-33 to use case-sensitive
-target_text = "pickpocket"
+target_text = 'Infernal'
+
 # Exclude some extension, in this case .LSF and .LSB is encoded, so you must decode it to .LSX first
-excluded_extension = ['.lsf', '.lsb']
+excluded_extension = [
+                        '.lsf',
+                        '.lsb',
+                        '.dds',
+                      ]
 
 def gather_file(folder_path):
     all_files = []

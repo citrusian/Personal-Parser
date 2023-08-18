@@ -4,12 +4,12 @@ from tqdm import tqdm
 
 # Source and destination folder paths
 source_folder = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Public"
-destination_folder = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Misc LSF"
+destination_folder = r"Y:\GOG Games\BG3 Mods\Export\-Base Public\Search\LSB"
 
 # File Extension
 included_extensions = [
-                        '.lsf',
-                        # '.lsb',
+                        # '.lsx',
+                        '.lsb',
                        ]
 
 # Create destination if not exist
